@@ -11,3 +11,14 @@ springprjdec2025
         return employeeService.isOnboarded(empId, email);
     }
 ```
+
+#Step to map the request parameter#
+``` GET /products-by-category?categoryid={catId}```
+```
+@GetMapping("/products-by-category")
+public List<AmazonProduct> getAmazonProductByCategory(
+        @RequestParam("categoryid") String catgory) {
+
+    return amazonProductService.getProductByCategoryId(categoryid);
+} 
+```
