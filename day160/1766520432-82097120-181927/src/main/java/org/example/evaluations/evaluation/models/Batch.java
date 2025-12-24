@@ -14,11 +14,7 @@ public class Batch {
     @Id
     private UUID id;
 
-    @ManyToMany
-    @JoinTable(name = "batches_instructors",
-            joinColumns = @JoinColumn(name = "batch_id"),
-            inverseJoinColumns = @JoinColumn(name = "instructor_id")
-    )
+    @ManyToMany(mappedBy = "batches")
     private List<Instructor> instructors;
 
     private String name;

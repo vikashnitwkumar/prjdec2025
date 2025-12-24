@@ -3,6 +3,7 @@ package org.example.evaluations.evaluation.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
 import java.util.Set;
@@ -17,6 +18,6 @@ public class Class {
     private String topic;
     @ManyToMany(mappedBy = "classes")
     private Set<Batch> batches;
-
+    @ManyToOne
     private Instructor currentInstructor;
 }

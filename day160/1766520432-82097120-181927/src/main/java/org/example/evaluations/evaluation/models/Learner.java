@@ -9,10 +9,7 @@ import java.util.UUID;
 
 @Data
 public class Learner {
-    @EmbeddedId
-    private LearnerPreviousBatch id;
     @Id
-    @Mapped
     private UUID id;
 
     private String name;
