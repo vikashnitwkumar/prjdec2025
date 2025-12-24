@@ -1,0 +1,6 @@
+/config/workspace/src/main/java/org/example/evaluations/EvaluationsApplication.java
+/config/workspace/src/main/java/org/example/evaluations/evaluation/models/InstagramComment.java
+/config/workspace/src/main/java/org/example/evaluations/evaluation/models/InstagramLike.java
+/config/workspace/src/main/java/org/example/evaluations/evaluation/models/InstagramPage.java
+/config/workspace/src/main/java/org/example/evaluations/evaluation/models/InstagramPost.java
+/config/workspace/src/main/java/org/example/evaluations/evaluation/models/InstagramUser.java
